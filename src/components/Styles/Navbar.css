@@ -1,3 +1,38 @@
+a{
+    text-decoration: none;
+}
+
 .logo-container{
-    width: 50px;
+    width: 10%;
+    height: 10%;
+}
+/* hamburguesa menu */
+.menu-button{
+    display: none;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    justify-content: space-between;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding-top: 20px;
+    margin-left: 30px;
+    margin-right: 10%;
+}
+.nav-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.nav-titles{
+    color:white;
+    text-decoration: none;
+    padding-left: 30px;
 }

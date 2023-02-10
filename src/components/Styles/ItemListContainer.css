@@ -1,0 +1,8 @@
+.item-list-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.item-list-container-title{
+    color: white;
+}
