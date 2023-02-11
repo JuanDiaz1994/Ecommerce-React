@@ -1,6 +1,7 @@
+import "./Count.css"
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
-import "./Styles/Count.css"
+
 
 
 

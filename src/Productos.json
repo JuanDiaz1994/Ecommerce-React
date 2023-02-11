@@ -1,0 +1,12 @@
+[
+    { "id":1,"name": "Repulgadora", "descripcion": "Repulgadora para facilitar y optimizar el tiempo al fabricar empanadas", "img": "assets/9a/f5/dc/1a/84/featured_preview_7490c4d8-7579-4f09-88e7-3fd678cea3d6.jpg"},
+    { "id":2,"name": "Skeleton hand (pie de gabinete)", "descripcion": "pie de gabinete con forma de mano que soporta hasta 20kg","img": "assets/81/45/d5/0b/69/featured_preview_3ef5c029-c447-4c00-98fe-6e9b273cdf5e.jpg"},
+    { "id":3,"name": "Protesis de brazo", "descripcion": "Protesis de brazo flexible de varios colores para chicos y adultos","img": "assets/0e/14/cc/cd/24/featured_preview_69915f1e-9606-44fd-82ef-d17622dbd3de.jpg"},
+    { "id":4,"name": "Porta auriculares", "descripcion": "Porta auriculares tipo morza para agregar a cualquier escritorio, macizo y duradero","img": "renders/f3/b8/e9/1c/bf/3307353cdd2b965ab703403631ab9ea4_preview_featured.jpg"},
+    { "id":5,"name": "Tic Tak Toe", "descripcion": "Super conocido juego Tic taK Toe/3 en linea de plastico macizo en 2 colores a elección","img": "assets/78/ac/f1/fd/aa/featured_preview_d6b123a1-d4ac-454b-ad0c-cfccc2c70c8e.jpg"},
+    { "id":6,"name": "Paleta porta pinceles", "descripcion": "Paleta y nombre a eleccion de 6 colores y porta pinceles estilo japones","img": "assets/0e/84/dc/e4/33/featured_preview_bcfd23b1-181b-41f9-9f89-13250b5e6afc.jpg"},
+    { "id":7,"name": "Letras", "descripcion": "Letras en mayuscula ideal para regalo","img": "assets/7c/f1/e1/7b/d9/featured_preview_a667f6c9-3232-488e-9b7d-8e25ffa89bf0.png"},
+    { "id":8,"name": "Porta SmartWatch", "descripcion": "Porta reloj con forma de mano","img": "assets/aa/87/c1/59/16/featured_preview_4ae92b5f-68a5-47cc-9940-7ca4f2595b96.jpg"}
+       
+
+]
