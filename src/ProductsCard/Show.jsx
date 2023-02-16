@@ -2,18 +2,16 @@ import { useState, useEffect } from 'react'
 import { Link } from "react-router-dom"
 import { collection, getDocs, deleteDoc, doc } from "firebase/firestore"
 import { db } from "../FirebaseConfig/firebase.js"
-
 import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-import { async } from '@firebase/util'
 
-const MySwal = withReactContent(Swal)
+
+
 
 const Show = ()=>{
 
 // 1 configurar los hooks
 
-const [products, setProducts] = useState([])
+const [products,setProducts] = useState([])
 
 // 2 referenciar a la db de firestore
 
@@ -24,7 +22,9 @@ const productsCollection = collection (db, "3DProducts")
 const getProducts = async () =>{
     const data = await getDocs (productsCollection)
     //console.log(data.docs)
-    setProducts(data.docs.map((doc)=>({...doc.data(),id:doc.id})))
+    setProducts(
+        data.docs.map((doc)=>({...doc.data(),id:doc.id}))
+        )
 }
 
 // 4 funcion para eliminar un documento
@@ -65,7 +65,7 @@ useEffect(()=>{
     getProducts()
 },[])
 
-// devolver la vista
+// 7 devolvemos la vista de nuestro componente
 
     return(
         <div className='container'>
@@ -83,7 +83,7 @@ useEffect(()=>{
                             </tr>
                         </thead>
                         <tbody>
-                            {products.map((product)=>{
+                            {products.map((product)=>(
                                 <tr key={product.id}>
                                     <td>{product.description}</td>
                                     <td>{product.stock}</td>
@@ -91,17 +91,13 @@ useEffect(()=>{
                                         <Link to={`/edit/${product.id}`} className="btn btn-light"><i className="fa-solid fa-pencil"></i> </Link>  
                                     <button onClick={()=>{confirmDelete(product.id)}} className="btn btn-danger"><i className="fa-solid fa-trash"></i></button>
                                     </td>
-
                                 </tr>
-
-                            })}
+                            ))}
                         </tbody>
                     </table>
                 </div>
             </div>
-
         </div>
-
     )
 }
 
