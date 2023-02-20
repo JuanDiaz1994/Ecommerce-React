@@ -4,13 +4,13 @@ import CartWidget from '../Cart/Index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Image  from '../images/LOGO.png'
+import { NavLink } from "react-router-dom";
 
 
 const NavBar = () => {
   return (
-    <header className= "main">
+    <header>
       <div>
-        
         {/* Botón de menú  */}
         <div className="menu-button">
           <FontAwesomeIcon icon={faBars} size="lg" color="black"/>
@@ -18,33 +18,49 @@ const NavBar = () => {
         </div>
 
         {/* links de navegación */}
-        <div className="nav">
-        <img className="logo-container" src={ Image } alt ="logo" />
 
         <nav >
           <ul className="nav-container">
 
-            <ol>
-              <a className='nav-titles' href="/">Inicio</a>
+          <ol className='nav-titles1'>
+            <NavLink  to={"/"}>
+              <img className="logo-container" src={Image} alt="logo" />
+            </NavLink>
+          </ol>
+          <div className="nav-container1">
+          <ol>
+            <NavLink className='nav-titles' to={"/"}>
+            Inicio
+            </NavLink>
             </ol>
             <ol>
-              <a className='nav-titles' href="/"> Productos</a>
+            <NavLink className='nav-titles' to={"./category/Juegos"}>
+            Juegos
+            </NavLink>
             </ol>
             <ol>
-              <a className='nav-titles' href="/">Blog</a>
+            <NavLink className='nav-titles' to={"./category/Tecnologia"}>
+            Tecnologia
+            </NavLink>
             </ol>
             <ol>
-              <a className='nav-titles' href="/">Contacto</a>
+            <NavLink className='nav-titles' to={"./category/Articulos"}>
+            Articulos varios
+            </NavLink>
             </ol>
+            <ol>
+            <NavLink className='nav-titles' to={"./category/Cocina"}>
+            Cocina
+            </NavLink>
+            </ol>
+            </div>
           </ul>
         </nav>
         </div>
-        {/* logo de la marca */}
-
-        {/* cart widget */}
         <CartWidget />
-      </div>
     </header>
+
+
   );
 };
 

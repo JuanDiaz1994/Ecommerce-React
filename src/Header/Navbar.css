@@ -3,36 +3,38 @@ a{
 }
 
 .logo-container{
-    width: 10%;
-    height: 10%;
+    width: 45%;
 }
 /* hamburguesa menu */
 .menu-button{
     display: none;
 }
-.nav{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: flex-end;
-    list-style-type: none;
-    justify-content: space-between;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding-top: 20px;
-    margin-left: 30px;
-    margin-right: 10%;
-}
+
 .nav-container{
     display: flex;
     flex-direction: row;
     align-content: center;
+    align-items: baseline;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding: 0px;
+    padding-top: 20px;
+    margin-right: 50px;
+}
+.nav-container1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: baseline;
     justify-content: space-between;
+    font-size: 18px;
+    padding: 0px;
+    padding-top: 50px;
 }
 .nav-titles{
     color:white;
     text-decoration: none;
-    padding-left: 30px;
+}
+.nav-titles1{
+    margin-right: 40%;
 }
